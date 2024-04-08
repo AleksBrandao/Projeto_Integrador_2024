@@ -7,7 +7,7 @@ if (isset($_SESSION['Admin-name'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Log In</title>
+    <title>Conecte-se</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -31,8 +31,8 @@ if (isset($_SESSION['Admin-name'])) {
 <body>
 <?php include'header.php'; ?> 
 <main>
-  <h1 class="slideInDown animated">Please, Login with the Admin E-mail and Password</h1>
-  <h1 class="slideInDown animated" id="reset">Please, Enter your Email to send the reset password link</h1>
+  <h1 class="slideInDown animated">Por favor, faça o login com o e-mail do administrador e a senha</h1>
+  <h1 class="slideInDown animated" id="reset">Por favor, digite seu e -mail para enviar o link de senha de redefinição</h1>
 <!-- Log In -->
 <section>
   <div class="slideInDown animated">
@@ -86,14 +86,14 @@ if (isset($_SESSION['Admin-name'])) {
         <div class="alert1"></div>
         <form class="reset-form" action="reset_pass.php" method="post" enctype="multipart/form-data">
           <input type="email" name="email" placeholder="E-mail..." required/>
-          <button type="submit" name="reset_pass">Reset</button>
-          <p class="message"><a href="#">LogIn</a></p>
+          <button type="submit" name="reset_pass">Reiniciar</button>
+          <p class="message"><a href="#">Conecte-se</a></p>
         </form>
         <form class="login-form" action="ac_login.php" method="post" enctype="multipart/form-data">
           <input type="email" name="email" id="email" placeholder="E-mail..." required/>
           <input type="password" name="pwd" id="pwd" placeholder="Password" required/>
           <button type="submit" name="login" id="login">login</button>
-          <p class="message">Forgot your Password? <a href="#">Reset your password</a></p>
+          <p class="message">Esqueceu sua senha? <a href="#">Redefina sua senha</a></p>
         </form>
       </div>
     </div>

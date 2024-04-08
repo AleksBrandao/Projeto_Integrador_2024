@@ -7,7 +7,7 @@ if (!isset($_SESSION['Admin-name'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Manage Users</title>
+	<title>Gerenciar usuários</title>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="icon" type="image/png" href="images/favicon.png">
@@ -47,12 +47,12 @@ if (!isset($_SESSION['Admin-name'])) {
 <body>
 <?php include'header.php';?>
 <main>
-	<h1 class="slideInDown animated">Add a new User or update his information <br> or remove him</h1>
+	<h1 class="slideInDown animated">Adicione um novo usuário ou atualize suas informações <br> ou removê -lo</h1>
 	<div class="form-style-5 slideInDown animated">
 		<form enctype="multipart/form-data">
 			<div class="alert_user"></div>
 			<fieldset>
-				<legend><span class="number">1</span> User Info</legend>
+				<legend><span class="number">1</span> informação de usuário</legend>
 				<input type="hidden" name="user_id" id="user_id">
 				<input type="text" name="name" id="name" placeholder="User Name...">
 				<input type="text" name="number" id="number" placeholder="Serial Number...">
@@ -61,9 +61,9 @@ if (!isset($_SESSION['Admin-name'])) {
 			<fieldset>
 			<legend><span class="number">2</span> Additional Info</legend>
 			<label>
-				<label for="Device"><b>User Department:</b></label>
+				<label for="Device"><b>Departamento do Usuário:</b></label>
                     <select class="dev_sel" name="dev_sel" id="dev_sel" style="color: #000;">
-                      <option value="0">All Departments</option>
+                      <option value="0">Todos os departamentos</option>
                       <?php
                         require'connectDB.php';
                         $sql = "SELECT * FROM devices ORDER BY device_name ASC";
@@ -82,13 +82,13 @@ if (!isset($_SESSION['Admin-name'])) {
                         }
                       ?>
                     </select>
-				<input type="radio" name="gender" class="gender" value="Female">Female
-	          	<input type="radio" name="gender" class="gender" value="Male" checked="checked">Male
+				<input type="radio" name="gender" class="gender" value="Female">Mulher
+	          	<input type="radio" name="gender" class="gender" value="Male" checked="checked">Homem
 	      	</label >
 			</fieldset>
-			<button type="button" name="user_add" class="user_add">Add User</button>
-			<button type="button" name="user_upd" class="user_upd">Update User</button>
-			<button type="button" name="user_rmo" class="user_rmo">Remove User</button>
+			<button type="button" name="user_add" class="user_add">Adicionar usuário</button>
+			<button type="button" name="user_upd" class="user_upd">Atualize o usuário</button>
+			<button type="button" name="user_rmo" class="user_rmo">Remova o usuário</button>
 		</form>
 	</div>
 

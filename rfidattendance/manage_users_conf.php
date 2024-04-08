@@ -174,7 +174,7 @@ if (isset($_POST['Update'])) {
                             }
                         }
                         else {
-                            echo "The serial number is already taken!";
+                            echo "O número de série já está em uso!";
                             exit();
                         }
                     }
@@ -182,7 +182,7 @@ if (isset($_POST['Update'])) {
             }    
         }
         else {
-            echo "There's no selected User to be updated!";
+            echo "Não há usuário selecionado para ser atualizado!";
             exit();
         }
     }
@@ -222,7 +222,7 @@ if (isset($_POST['delete'])) {
     $user_id = $_POST['user_id'];
 
     if (empty($user_id)) {
-        echo "There no selected user to remove";
+        echo "Não há usuário selecionado para remover";
         exit();
     } else {
         $sql = "DELETE FROM users WHERE id=?";

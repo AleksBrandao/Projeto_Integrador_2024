@@ -2,12 +2,12 @@
   <table class="table">
     <thead class="table-primary">
       <tr>
-        <th>Card UID</th>
-        <th>Name</th>
-        <th>Gender</th>
+        <th>Cartão UID</th>
+        <th>Nome</th>
+        <th>Gênero</th>
         <th>S.No</th>
-        <th>Date</th>
-        <th>Department</th>
+        <th>Data</th>
+        <th>Departamento</th>
       </tr>
     </thead>
     <tbody class="table-secondary">

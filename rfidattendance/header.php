@@ -7,7 +7,7 @@
 <header>
 <div class="header">
 	<div class="logo">
-		<a href="index.php">RFID Attendance</a>
+		<a href="index.php">Atendimento RFID</a>
 	</div>
 </div>
 <?php  
@@ -55,10 +55,10 @@
 	  }
 ?>
 <div class="topnav" id="myTopnav">
-	<a href="index.php">Users</a>
-    <a href="ManageUsers.php">Manage Users</a>
-    <a href="UsersLog.php">Users Log</a>
-    <a href="devices.php">Devices</a>
+	<a href="index.php">Usuários</a>
+    <a href="ManageUsers.php">Gerenciar usuários</a>
+    <a href="UsersLog.php">Usuários log</a>
+    <a href="devices.php">Dispositivas</a>
     <?php  
     	if (isset($_SESSION['Admin-name'])) {
     		echo '<a href="#" data-toggle="modal" data-target="#admin-account">'.$_SESSION['Admin-name'].'</a>';
@@ -90,23 +90,23 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">Update Your Account Info:</h3>
+        <h3 class="modal-title" id="exampleModalLongTitle">Atualize as informações da sua conta:</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <form action="ac_update.php" method="POST" enctype="multipart/form-data">
 	      <div class="modal-body">
-	      	<label for="User-mail"><b>Admin Name:</b></label>
+	      	<label for="User-mail"><b>Nome do administrador:</b></label>
 	      	<input type="text" name="up_name" placeholder="Enter your Name..." value="<?php echo $_SESSION['Admin-name']; ?>" required/><br>
 	      	<label for="User-mail"><b>Admin E-mail:</b></label>
 	      	<input type="email" name="up_email" placeholder="Enter your E-mail..." value="<?php echo $_SESSION['Admin-email']; ?>" required/><br>
-	      	<label for="User-psw"><b>Password</b></label>
+	      	<label for="User-psw"><b>Senha</b></label>
 	      	<input type="password" name="up_pwd" placeholder="Enter your Password..." required/><br>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="submit" name="update" class="btn btn-success">Save changes</button>
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="submit" name="update" class="btn btn-success">Salvar alterações</button>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 	      </div>
 	  </form>
     </div>

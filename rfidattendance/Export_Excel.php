@@ -77,14 +77,14 @@ if(isset($_POST["To_Excel"])){
                   <table class="table" bordered="1">  
                     <TR>
                       <TH>ID</TH>
-                      <TH>Name</TH>
-                      <TH>Serial Number</TH>
-                      <TH>Card UID</TH>
-                      <TH>Device ID</TH>
-                      <TH>Device Dep</TH>
-                      <TH>Date log</TH>
-                      <TH>Time In</TH>
-                      <TH>Time Out</TH>
+                      <TH>Nome</TH>
+                      <TH>Número de série</TH>
+                      <TH>Cartão uid</TH>
+                      <TH>ID do dispositivo</TH>
+                      <TH>Dispositivo</TH>
+                      <TH>Data Log</TH>
+                      <TH>Horário entrada</TH>
+                      <TH>Horário saída</TH>
                     </TR>';
         while($row=$result->fetch_assoc()) {
             $output .= '

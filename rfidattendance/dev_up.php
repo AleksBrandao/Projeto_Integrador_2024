@@ -5,12 +5,12 @@ session_start();
 	<table class="table">
 		<thead>
 	      <tr>
-	        <th>De.Name</th>
-	        <th>De.Department</th>
+	        <th>De.Nome</th>
+	        <th>De.Departamento</th>
 	        <th>De.UID</th>
-	        <th>De.Date</th>
-	        <th>De.Mode</th>
-	        <th>De.Config</th>
+	        <th>De.Data</th>
+	        <th>De.Modo</th>
+	        <th>De.config</th>
 	      </tr>
     	</thead>
     	<tbody>

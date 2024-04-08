@@ -61,8 +61,8 @@ if (isset($_POST['reset_pass'])) {
 
 	$subject = 'Reset your password!!';
 
-	$message = '<p>We received a password reset request. The link to reset your password is below. if you did not make this request, you can ignore this email</p>';
-	$message .= '<p>Here is your password reset link: </br>';
+	$message = '<p>Recebemos uma solicitação de redefinição de senha. O link para redefinir sua senha está abaixo. Se você não fez esse pedido, pode ignorar este e-mail</p>';
+	$message .= '<p>Aqui está o seu link de redefinição de senha: </br>';
 	$message .= '<a href="'.$url.'">'.$url.'</a></p>';
 
 	$headers = "MIME-Version: 1.0" . "\r\n";

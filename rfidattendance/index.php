@@ -26,18 +26,18 @@ if (!isset($_SESSION['Admin-name'])) {
 <?php include'header.php'; ?> 
 <main>
 <section>
-  <h1 class="slideInDown animated">Here are all the Users</h1>
+  <h1 class="slideInDown animated">Aqui estão todos os usuários</h1>
   <!--User table-->
   <div class="table-responsive slideInRight animated" style="max-height: 400px;"> 
     <table class="table">
       <thead class="table-primary">
         <tr>
-          <th>ID | Name</th>
-          <th>Serial Number</th>
-          <th>Gender</th>
-          <th>Card UID</th>
-          <th>Date</th>
-          <th>Device</th>
+          <th>Id |Nome</th>
+          <th>Número de série</th>
+          <th>Gênero</th>
+          <th>Cartão uid</th>
+          <th>Data</th>
+          <th>Dispositiva</th>
         </tr>
       </thead>
       <tbody class="table-secondary">
